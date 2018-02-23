@@ -1152,5 +1152,13 @@ namespace Calendar.NET
             if (_calendarView == CalendarViews.Day)
                 ResizeScrollPanel();
         }
+
+        /// <summary>
+        /// Remove all events from the calendar
+        /// </summary>
+        public void RemoveAllEvents()
+        {
+            _events.Clear();
+        }
     }
 }
